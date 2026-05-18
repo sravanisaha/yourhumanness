@@ -27,7 +27,7 @@
 <h1>Let's start with the now.</h1>
 </header>
 
-<section class="container">
+<!--<section class="container">
 <div style="max-width:780px;margin:0 auto 4rem">
 <span class="eyebrow">For Teams & Organizations</span>
 <h2>Leadership offsites, team workshops, retreats, focus programs.</h2>
@@ -50,9 +50,9 @@
 <div class="center" style="max-width:600px;margin:0 auto 2rem">
 <span class="eyebrow">Start a conversation</span>
 <h2>Tell us a little about you or your team.</h2>
-</div>
+</div>-->
 <!-- Formspree placeholder -->
-<form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+<!--<form action="https://formspree.io/f/PLACEHOLDER" method="POST">
 <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
 <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
 <div class="field"><label for="reaching-as">I'm reaching out as</label>
@@ -70,7 +70,74 @@
 <div class="field"><label for="more">Tell me more</label><textarea id="more" name="message" placeholder="Anything you'd like us to know…"></textarea></div>
 <div class="center"><button type="submit" class="btn">Send</button></div>
 </form>
-</div></section>
+</div></section>-->
+
+<section class="section-alt">
+<div class="container split">
+<div>
+<h2>For Individuals</h2>
+<p>If you're seeking deeper focus, cognitive resilience, and genuine mental wellbeing, our MBSR-inspired mindfulness programs offer a steady, science-backed path. Our immersive labs, Cathar(t)sis and The Listening Lab, help you reconnect with your creativity and build more meaningful relationships.</p>
+</div>
+<div>
+<h2>For Teams &amp; Organizations</h2>
+<p>Our immersive labs are designed for teams that value focus, creativity, and human connection. Cathar(t)sis and The Listening Lab are ideal for corporate events, team building, leadership offsites, and retreats — experiences that go beyond the ordinary. We custom-build every workshop to your team's needs.</p>
+</div>
+</div>
+</section>
+
+<section class="container" style="max-width:560px;margin:4rem auto">
+<div style="text-align:center;margin-bottom:2rem">
+<span class="eyebrow">Start here</span>
+<h2>Get In Touch</h2>
+</div>
+
+<form action="https://formspree.io/f/xqejaegk" method="POST">
+<input type="hidden" name="_subject" value="New enquiry from Your Humanness website">
+<input type="hidden" name="_next" value="https://www.yourhumanness.com/thank-you.html">
+
+<div class="field">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+
+<div class="field">
+<label for="email">Your Email</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div class="field">
+<label for="reaching-as">I am reaching out as</label>
+<select id="reaching-as" name="reaching_as" required onchange="document.getElementById('org-field').style.display = this.value === 'A Team or Organisation' ? 'block' : 'none';">
+<option value="">Please select</option>
+<option>An Individual</option>
+<option>A Team or Organisation</option>
+</select>
+</div>
+
+<div class="field" id="org-field" style="display:none">
+<label for="org">Organisation Name</label>
+<input type="text" id="org" name="organisation">
+</div>
+
+<div class="field">
+<label>What are you interested in?</label>
+<div class="checks">
+<label><input type="checkbox" name="interests[]" value="Our Mindfulness Circle"> Our Mindfulness Circle</label>
+<label><input type="checkbox" name="interests[]" value="Cathar(t)sis"> Cathar(t)sis</label>
+<label><input type="checkbox" name="interests[]" value="The Listening Lab"> The Listening Lab</label>
+<label><input type="checkbox" name="interests[]" value="Custom Workshop"> Custom Workshop</label>
+</div>
+</div>
+
+<div class="field">
+<label for="message">Tell me more</label>
+<textarea id="message" name="message" required style="min-height:140px" placeholder="Share a little about what you're looking for — no pressure to have it all figured out."></textarea>
+</div>
+
+<button type="submit" class="btn" style="width:100%">Send Your Message</button>
+</form>
+</section>
+
 
 <footer><div class="foot-inner">
 <div><a href="index.html" class="brand">Your Human<em>ness</em></a>
