@@ -22,7 +22,7 @@
 <li><a href="contact.html">Contact</a></li>
 </ul></div></nav>
 
-<header class="hero container">
+<!--<header class="hero container">
 <span class="eyebrow">Contact</span>
 <h1>Say hello.</h1>
 <p class="sub">For collaborations, questions, or simply to introduce yourself.</p>
@@ -35,6 +35,64 @@
 <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" name="message" required></textarea></div>
 <div class="center"><button class="btn" type="submit">Send</button></div>
 </form>
+</section>-->
+
+<header class="hero container">
+<span class="eyebrow">Contact</span>
+<h1>Say hello.</h1>
+<p class="sub">For collaborations, questions, or simply 
+to introduce yourself. For program and workshop enquiries, 
+visit the <a href="work-with-us.html">Work With Us</a> page.</p>
+</header>
+
+<section class="container">
+<form action="https://formspree.io/f/mgoqvapo" method="POST">
+
+  <!-- Formspree hidden fields -->
+  <input type="hidden" name="_subject" 
+  value="New message from Your Humanness website">
+  <input type="hidden" name="_next" 
+  value="https://www.yourhumanness.com/thank-you.html">
+
+  <div class="field">
+    <label for="cname">Name</label>
+    <input type="text" id="cname" name="name" required>
+  </div>
+
+  <div class="field">
+    <label for="cemail">Email</label>
+    <input type="email" id="cemail" name="email" required>
+  </div>
+
+  <div class="field">
+    <label for="cmsg">Message</label>
+    <textarea id="cmsg" name="message" required 
+    placeholder="What's on your mind?"></textarea>
+  </div>
+
+  <div class="center">
+    <button class="btn" type="submit">Send Message</button>
+  </div>
+
+</form>
+
+<!-- Other ways to connect -->
+<div style="margin-top:3rem;text-align:center;
+padding-top:2rem;border-top:1px solid var(--line)">
+  <span class="eyebrow">Other ways to connect</span>
+  <p style="margin:.4rem 0">
+    <a href="mailto:sravani@yourhumanness.com">
+    sravani@yourhumanness.com</a>
+  </p>
+  <p style="margin:.4rem 0;color:var(--muted);font-size:.95rem">
+    <a href="mindfulness-circle.html">Our Mindfulness Circle</a> 
+    — every Saturday, 10am EST. Free and open to all.
+  </p>
+  <p style="margin:.4rem 0;font-size:.95rem">
+    <a href="events.html">See all upcoming events →</a>
+  </p>
+</div>
+
 </section>
 
 <footer><div class="foot-inner">
