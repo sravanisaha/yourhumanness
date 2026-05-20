@@ -227,3 +227,24 @@ footer{
   .nav-links li:last-child{border:none}
   .nav-inner{position:relative}
 }
+/* Mobile Optimization for Hero Section */
+@media (max-width: 768px) {
+  .hero {
+    /* Reduces the massive top/bottom padding so the content lifts up on small screens */
+    padding: 4rem 1.2rem 3rem; 
+  }
+
+  .hero h1 {
+    /* Drops the minimum font size so it sits elegantly on a phone screen */
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .hero .sub {
+    /* Slightly reduces the subtitle font size (around 16px) for better readability */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+}
