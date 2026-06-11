@@ -61,7 +61,8 @@ a:hover{border-color:var(--accent)}
   font-family: var(--sans);
   font-size: .6rem;
   letter-spacing: .12em;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  ine-height: 1.2;
   color: var(--muted);
   font-style: normal;
   white-space: nowrap;
