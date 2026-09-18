@@ -235,7 +235,7 @@ Mindfulness · Attention · Human Connection</p>
   .formkit-form[data-uid="26b0e1170b"] .formkit-field {
     flex: 1 !important;
   }
-      .formkit-form[data-uid="26b0e1170b"] .formkit-submit {
+  .formkit-form[data-uid="26b0e1170b"] .formkit-submit {
     flex-shrink: 0 !important;
   }
 </style>
@@ -252,7 +252,19 @@ min-width="500 600 700 800 900">
   data-element="errors" data-group="alert"></ul>
   <div data-element="fields" data-stacked="false" 
   class="seva-fields formkit-fields">
-    <div class="formkit-field"><input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"></div><div class="formkit-field"><div role="button" tabindex="0"><fieldset data-group="checkboxes" class="formkit-3875" group="field" type="Custom" order="2" save_as="Tag"><legend style="color: rgb(0, 0, 0); font-weight: 400;">What would you like to hear about?</legend><div class="formkit-checkboxes" data-element="tags-checkboxes" data-group="checkbox" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"><input class="formkit-checkbox" id="tag-3875-23530652" type="checkbox" name="tags[]" value="23530652"><label for="tag-3875-23530652">Yes, keep me updated about Our Mindfulness Circle (Saturday sessions, reminders)</label></div><div class="formkit-checkboxes" data-element="tags-checkboxes" data-group="checkbox" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;"><input class="formkit-checkbox" id="tag-3875-23530654" type="checkbox" name="tags[]" value="23530654"><label for="tag-3875-23530654">Yes, send me the Your Humanness newsletter and invites for events</label></div></fieldset></div></div>
+    <div class="formkit-field">
+      <input class="formkit-input" 
+      name="email_address" 
+      aria-label="Email Address" 
+      placeholder="Your email address" 
+      required="" 
+      type="email" 
+      style="color:var(--ink);
+             border-color:var(--line);
+             border-radius:4px;
+             font-family:var(--sans);
+             font-size:.95rem;">
+    </div>
     <button data-element="submit" 
     class="formkit-submit" 
     style="background-color:var(--ink);
