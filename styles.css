@@ -277,3 +277,29 @@ footer{
 @media(min-width:1001px){
   .nav-links{align-items:center}
 }
+
+.faq details {
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  padding: 1rem 0;
+}
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;          /* hides the default triangle */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq summary::-webkit-details-marker { display: none; }  /* Safari */
+.faq summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.faq details[open] summary::after {
+  content: "−";
+}
+.faq details p {
+  margin: .75rem 0 0;
+}
