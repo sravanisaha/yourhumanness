@@ -303,3 +303,12 @@ footer{
 .faq details p {
   margin: .75rem 0 0;
 }
+
+.credentials-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0;
+}
+.credentials-list li {
+  padding: .6rem 0;
+}
