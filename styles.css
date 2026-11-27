@@ -305,10 +305,11 @@ footer{
 }
 
 .credentials-list {
-  list-style: none;
-  padding: 0;
+  display: inline-block;
+  text-align: left;
   margin: 1.25rem 0;
+  padding-left: 1.25rem;   /* keeps the bullets inside the block */
 }
 .credentials-list li {
-  padding: .6rem 0;
+  padding: .35rem 0;
 }
